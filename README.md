@@ -1,7 +1,7 @@
 # Data Source
 - Protein sequences were downloaded from UniProtKB (https://www.uniprot.org/).  
 - Two groups:
-Normal conditions: 100 proteins
+Normal conditions: 100 proteins, 
 Drought stress: 100 proteins
 # Comparing Normal and Drought-Stressed Proteins
 Proteins under normal conditions and under drought stress were analysed to reveal amino acid patterns and sequence features linked to drought response.  
