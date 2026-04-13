@@ -1,25 +1,31 @@
-# Data Source
-- Protein sequences were downloaded from UniProtKB (https://www.uniprot.org/).  
-- Two groups:
-Normal conditions: 100 proteins, 
-Drought stress: 100 proteins
-# Comparing Normal and Drought-Stressed Proteins
-Proteins under normal conditions and under drought stress were analysed to reveal amino acid patterns and sequence features linked to drought response.  
-Normal proteins: control/baseline  
-Drought-stressed proteins: stress response  
-This allows a machine learning model to distinguish between baseline and stress-responsive proteins.
-# Methods
-1. Feature Extraction
-   - Amino acid composition: frequency of each of the 20 standard amino acids.
-2. Machine Learning
-   - Random Forest classifier (scikit-learn) used for binary classification.
-   - Train/Test split: 80/20
-   - Hyperparameter tuning: GridSearchCV for `n_estimators`, `max_depth`, `min_samples_split`
-3. Evaluation
-   - Accuracy and confusion matrix.
-   - Feature importance to identify amino acids most relevant to drought response.
-# Results
-- The model highlighted amino acids 'I, L, W, C' as the most important for distinguishing drought-responsive proteins.  
-- Feature importance chart provides a visual understanding of amino acids contributing most to stress response.
-# Requirements
-Python, Biopython, NumPy, Pandas, Scikit-learn, Matplotlib.
+# Objective
+Build a classification model to identify patterns in biological data and distinguish between two conditions using engineered features.
+
+# Dataset
+Protein sequence data from UniProtKB
+200 samples (100 per class)
+Binary classification problem
+
+# Tools & Technologies
+Python (Pandas, NumPy)
+Machine Learning (Scikit-learn)
+Data Processing (Biopython)
+Visualization (Matplotlib)
+
+# Workflow
+Data collection and preprocessing of sequence data
+Feature engineering using amino acid composition
+Model development using Random Forest classifier
+Hyperparameter tuning with GridSearchCV
+Model evaluation using accuracy and confusion matrix
+Feature importance analysis
+
+# Key Results
+Achieved 71% cross-validated accuracy
+Successfully classified samples based on engineered features
+Identified top predictive features contributing to model performance
+
+# Key Insights
+Feature engineering plays a critical role in improving model performance
+Ensemble models (Random Forest) effectively handle structured feature data
+Feature importance analysis helps interpret model decisions
