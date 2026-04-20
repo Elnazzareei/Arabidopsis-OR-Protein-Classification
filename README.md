@@ -1,5 +1,5 @@
 # Objective
-Build a classification model to identify patterns in biological data and distinguish between two conditions using engineered features.
+The objective of this project is to build a classification model to identify patterns in biological data and distinguish between two conditions using engineered features.
 
 # Dataset
 -Protein sequence data from UniProtKB
